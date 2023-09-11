@@ -77,7 +77,7 @@ describe('<Tasks />', () => {
 
     const { queryByTestId } = render(<Tasks />);
     expect(queryByTestId('tasks')).toBeTruthy();
-    expect(queryByTestId('project-name').textContent).toBe('🙌 THE OFFICE');
+    expect(queryByTestId('project-name').textContent).toBe('THE OFFICE');
   });
 
   it('renders a task with a collated title', () => {

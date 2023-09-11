@@ -37,7 +37,7 @@ export const AddProject = ({ shouldShow = false }) => {
             className="add-project__name"
             data-testid="project-name"
             type="text"
-            placeholder="Name your project"
+            placeholder="Nome do seu projeto"
           />
           <button
             className="add-project__submit"
@@ -45,7 +45,7 @@ export const AddProject = ({ shouldShow = false }) => {
             onClick={() => addProject()}
             data-testid="add-project-submit"
           >
-            Add Project
+            Adicionar projeto
           </button>
           <span
             aria-label="Cancel adding project"
@@ -74,7 +74,7 @@ export const AddProject = ({ shouldShow = false }) => {
         role="button"
         tabIndex={0}
       >
-        Add Project
+        Adicionar novo Projeto
       </span>
     </div>
   );
