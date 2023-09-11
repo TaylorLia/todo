@@ -72,7 +72,7 @@ export const AddTask = ({
           role="button"
         >
           <span className="add-task__plus">+</span>
-          <span className="add-task__text">Add Task</span>
+          <span className="add-task__text">Adicionar tarefa rapidamente</span>
         </div>
       )}
 
@@ -81,7 +81,7 @@ export const AddTask = ({
           {showQuickAddTask && (
             <>
               <div data-testid="quick-add-task">
-                <h2 className="header">Quick Add Task</h2>
+                <h2 className="header">Adicionar tarefa rapidamente</h2>
                 <span
                   className="add-task__cancel-x"
                   data-testid="add-task-quick-cancel"
@@ -134,7 +134,7 @@ export const AddTask = ({
                 : addTask()
             }
           >
-            Add Task
+            Adicionar tarefa
           </button>
           {!showQuickAddTask && (
             <span
@@ -154,7 +154,7 @@ export const AddTask = ({
               tabIndex={0}
               role="button"
             >
-              Cancel
+              Cancelar
             </span>
           )}
           <span

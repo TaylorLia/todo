@@ -58,7 +58,7 @@ export const AddProject = ({ shouldShow = false }) => {
             role="button"
             tabIndex={0}
           >
-            Cancel
+            Cancelar
           </span>
         </div>
       )}

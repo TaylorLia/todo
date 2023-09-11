@@ -40,7 +40,7 @@ export const Sidebar = () => {
             <span>
               <FaInbox />
             </span>
-            <span>Inbox</span>
+            <span>Caixa de Entrada</span>
           </div>
         </li>
         <li
@@ -66,7 +66,7 @@ export const Sidebar = () => {
             <span>
               <FaRegCalendar />
             </span>
-            <span>Today</span>
+            <span>Para Hoje</span>
           </div>
         </li>
         <li
@@ -92,7 +92,7 @@ export const Sidebar = () => {
             <span>
               <FaRegCalendarAlt />
             </span>
-            <span>Next 7 days</span>
+            <span>Proximos 7 dias</span>
           </div>
         </li>
       </ul>
@@ -111,7 +111,7 @@ export const Sidebar = () => {
             className={!showProjects ? 'hidden-projects' : undefined}
           />
         </span>
-        <h2>Projects</h2>
+        <h2>Projetos</h2>
       </div>
 
       <ul className="sidebar__projects">{showProjects && <Projects />}</ul>

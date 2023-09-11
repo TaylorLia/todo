@@ -25,7 +25,7 @@ export const Projects = ({ activeValue = null }) => {
           role="button"
           data-testid="project-action"
           tabIndex={0}
-          aria-label={`Select ${project.name} as the task project`}
+          aria-label={`Selecione ${project.name} como titulo do projeto!`}
           onClick={() => {
             setActive(project.projectId);
             setSelectedProject(project.projectId);

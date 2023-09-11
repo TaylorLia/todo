@@ -1,5 +1,5 @@
 export const collatedTasks = [
-  {key : 'INBOX', name: 'Inbox'},
-  {key : 'TODAY', name: 'Today'},
-  {key : 'NEXT_7', name: 'Next 7 Days'}
+  {key : 'INBOX', name: 'Caixa de Entrada'},
+  {key : 'TODAY', name: 'Para Hoje'},
+  {key : 'NEXT_7', name: 'Proximos 7 Dias'}
 ]

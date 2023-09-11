@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Checkbox } from './Checkbox';
 import { AddTask } from './AddTask';
 import { useTasks } from '../hooks';
@@ -27,17 +27,27 @@ export const Tasks = () => {
   }
 
   useEffect(() => {
-    document.title = `${projectName}: Todoist`;
+    document.title = `${projectName}: Projeto da lista`;
   });
+
+  const [hideCheckbox, setHideCheckbox] = useState(false);
+
+  const handleToggleCheckbox = () => {
+    setHideCheckbox(!hideCheckbox);
+  };
 
   return (
     <div className="tasks" data-testid="tasks">
       <h2 data-testid="project-name">{projectName}</h2>
 
+      <button class="lock-task" onClick={handleToggleCheckbox}>
+        {hideCheckbox ? 'Liberar Tasks' : 'Travar Tasks'}
+      </button>
+
       <ul className="tasks__list">
         {tasks.map((task) => (
           <li key={`${task.id}`}>
-            <Checkbox id={task.id} taskDesc={task.task} />
+            {hideCheckbox ? null : <Checkbox id={task.id} taskDesc={task.task} />}
             <span>{task.task}</span>
           </li>
         ))}

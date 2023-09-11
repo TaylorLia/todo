@@ -40,12 +40,12 @@ export const IndividualProject = ({ project }) => {
         {showConfirm && (
           <div className="project-delete-modal">
             <div className="project-delete-modal__inner">
-              <p>Are you sure you want to delete this project?</p>
+              <p>Você tem certeza que quer excluir o projeto?</p>
               <button
                 type="button"
                 onClick={() => deleteProject(project.docId)}
               >
-                Delete
+                Excluir
               </button>
               <span
                 onClick={() => setShowConfirm(!showConfirm)}
@@ -56,7 +56,7 @@ export const IndividualProject = ({ project }) => {
                 role="button"
                 aria-label="Cancel adding project, do not delete"
               >
-                Cancel
+              Cancelar
               </span>
             </div>
           </div>
